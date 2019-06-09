@@ -1,0 +1,97 @@
+\documentclass[onecolumn, draft]{IEEEtran}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{lineno}
+
+\title{Design strategies for a performant, modular GCI}
+\author{}
+
+\linenumbers
+\begin{document}
+\maketitle
+
+\newcommand{\note}[1]{\emph{\textcolor{red}{#1}}}
+\newcommand{\update}[1]{\emph{\textcolor{blue}{#1}}}
+\newcommand{\review}[1]{\emph{\textcolor{cyan}{#1}}}
+\newcommand{\temp}[1]{\emph{\textcolor{gray}{#1}}}
+
+\note{
+Possible venues:
+\begin{enumerate}
+    \item International Journal of Geographical Information Science (Q2): some similar papers in the past. Very long time to acceptation (52w?)
+    \item Future Generation Computing Systems (Q1): some comparable papers, but with some degree of innovation. Short time to first decision (8w)
+    \item ACM Transactions on Spatial Algorithms and Systems (Q2): focus on the implementation, not so much similar papers
+    \item IEEE Access (Q1): \$\$\$ Very short time to acceptance (4w)
+    \item GeoInformatica (Q2-3): not so much similar papers
+    \item IEEE Computer (Q2): ?
+\end{enumerate}
+}
+
+\begin{abstract}
+	\note{Remember the keywords once the venue is chosen!}
+\end{abstract}
+
+\section{Introduction}
+
+\note{
+\begin{itemize}
+    \item General motivation
+    \item Specific case
+    \item Related work
+\end{itemize}
+}
+
+\update{
+GCI are increasingly diffusing... 
+}
+ 
+Current proposals focuses mainly on the orchestration of different services to provide a comprehensive GCI, while less attention is devoted to the design of the single application. NEVERTHELESS, the optimised management of server resources can increase the capacity of the GCI, allowing it to support more users simultaneously on the same platform. MOREOVER, the optimised management of server resources allows for deploying more services on the same server, extending the capabilities of the GCI. It is worth mentioning that these improvements can be obtained by optimising the available underlying computing infrastructure rather than augmenting or upgrading it, ultimately reducing the costs of acquiring and maintaining a GCI.  
+
+
+\update{
+The contribution of this paper is the following:
+\begin{itemize}
+    \item Modular architecture through containerisation
+    \item Client-side processing
+    \item Efficient server-side processing
+\end{itemize}
+}
+
+\temp{
+NEVERTHELESS, the proposed techniques can be applied also to other applications
+}
+
+\section{Enabling technologies}
+
+\note{
+\begin{itemize}
+    \item Docker
+    \item RIA
+    \item Asynchronous programming
+\end{itemize}
+}
+
+\section{The developed GCI}
+
+\note{
+\begin{itemize}
+    \item Architecture of MyNameIsBeautiful
+    \begin{itemize}
+        \item Containers interaction \& deployment diagram
+        \item Specific technologies employed
+        \item Possibly, a screenshot of the web app
+    \end{itemize}
+    \item Some semblance of an evaluation
+    \begin{itemize}
+        \item performance in WeatherProg decoding
+        \item Capacity test with Apache JMeter
+        \item Weatherprog server utilisation statistics: Unix utilities?
+    \end{itemize}
+\end{itemize}
+}
+\section{Discussion}
+\section{Conclusion}
+
+\section*{Acknowledgements}
+This work has been funded by the Department of Agriculture of the Campania Region, within the URCoFi Executive Plan 2018-2019.
+\end{document}
